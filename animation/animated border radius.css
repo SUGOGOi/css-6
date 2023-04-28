@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.box1 {
+  height: 420px;
+  width: 420px;
+  /* margin: 100px 0 0 170px; */
+  background-color: aqua;
+  border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 .box {
+  height: 400px;
+  width: 400px;
+  /* margin: 100px 0 0 170px; */
+  border: 7px soild red;
+  border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  background-color: aqua;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url(me2.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 40% 70% 40%/ 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
+  }
+}

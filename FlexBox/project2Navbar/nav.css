@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: sans-serif;
+  font-size: 45px;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20vh;
+  border: 1vh solid #48CAE4;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
+
+[class^=item-] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  [class^=item-] {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=nav.css.map */
